@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Cores da Lorena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Jogo das Cores da Lorena</h1>
+
+        <div id="regras" class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h2>Regras do Jogo</h2>
+                <p>Bem-vinda, Lorena!</p>
+                <p>Este é um jogo para você descobrir as cores favoritas dos seus familiares.</p>
+                <p>Para cada familiar, você terá três opções de cores para escolher.</p>
+                <p>A pontuação funciona assim:</p>
+                <ul>
+                    <li>Acertando de primeira: 3 pontos</li>
+                    <li>Acertando na segunda: 2 pontos</li>
+                    <li>Acertando na terceira: 1 ponto</li>
+                </ul>
+                <p>No final, você verá sua pontuação total e um resumo das cores favoritas da família.</p>
+            </div>
+        </div>
+
+        <button id="btnRegras">Regras do Jogo</button>
+        <button id="btnIniciar">Iniciar Jogo</button>
+
+        <div id="jogo" style="display:none;">
+            <div id="pergunta"></div>
+            <div id="opcoes"></div>
+            <div id="feedback"></div>
+        </div>
+
+        <div id="resultado" style="display:none;">
+            <h2>Resultado Final</h2>
+            <p>Parabéns, Lorena! Sua pontuação foi: <span id="pontuacaoFinal"></span></p>
+            <h3>Resumo das Cores</h3>
+            <ul id="resumoCores"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
